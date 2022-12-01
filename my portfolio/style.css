@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: comic sans;
+}
+.banner{
+	/*background-image: linear-gradient(rgba(0,0,0,0.75)),rgba(0,0,0,0.75)),url('images3.png');*/
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+    background-position: center;	
+}
+.navbar{
+	width: 100%;
+	margin: auto;
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 10px;
+	padding: 15px;
+	
+}
+.logo{
+	width: 120px;
+	cursor: pointer;
+	border-radius: 50px;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: solid;
+	color:white;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bolder;
+	background-color: rgb(223, 84, 20);
+	padding: 10px;
+	border-radius: 10px;
+
+}
+
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 10;
+	background: none;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.6s;
+	
+}
+
+.navbar ul li:hover::after{
+	width: 100%;
+}
+.content{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: black;
+	border-radius: 20px;
+}
+.content h1{
+	font-size: 60px;
+	margin-top: 40px;
+	border-radius: 10px;
+	background-color: black;
+	margin: 50px;
+}
+.content p{
+	margin: 10px auto;
+	font-weight: 100;
+	line-height: 10px;
+}
+button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 10px green;
+	background: black;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: none;
+}
+span{
+	background: none;
+	height: 100%;
+	width: 0;
+	border-radius: 20px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.6s;
+}
+button:hover span{
+	width: 100%;
+}
+button:hover{
+	border: 50px;
+}
+body{
+	background: url('supra.jpeg');
+	background-size: cover;
+	background-position: center;
+	position: fixed;
+}
+h1 {
+	color: white;
+}
+h2{
+	font-size:40px ;
+	color: black;
+}
+
+.dropbtn {
+	background-color: rgb(223, 84, 20);
+	color: white;
+	padding: 	10px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	min-width: 200px;
+	border-radius: 10px;
+	
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(155, 54, 8)}
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+	min-width: 160px;
+  }
+  
+  .dropdown:hover .dropbtn {
+	background-color: rgb(165, 53, 1);
+	
+  }	
